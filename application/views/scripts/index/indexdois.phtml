@@ -1,0 +1,14 @@
+<p>
+<b>Recurso de "visão em dois tempos" do Zend está desativado!</b>
+</p>
+<p>
+<b>Não é necessário setar:</b><br>$this-&gt;_helper->layout->setLayout('nolayout');
+</p>
+<p>
+<b>Utilizar:</b><br>carregarAjax("index.php/&lt;controller&gt;/&lt;action&gt;", "método&lt;GET/POST&gt;", "alvo&lt;#divMoldura&gt;");
+</p>
+<p><b>Método para inserir imagens:</b><img src="<?=$this->baseUrl('images/icoAbrir.gif');?>" /> <br>
+	<br> $this->baseUrl(); == "<?=$this->baseUrl();?>" </br>
+	<br> $this->baseUrl('images/icoAbrir.gif'); == "<?=$this->baseUrl('images/icoAbrir.gif');?>" </br>
+	<br> &lt;img src="&lt;?=$this->baseUrl("images/icoAbrir.gif");?&gt;" /&gt; </br>
+</p>

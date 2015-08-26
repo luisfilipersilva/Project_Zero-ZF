@@ -1,0 +1,77 @@
+<script type="text/javascript">
+//<!--
+var grid = $("#tabGrid");
+
+var mydata = [{coluna1:'1',coluna2:'2',coluna3:'3',coluna4:'4',coluna5:'5',coluna6:'6'}];
+
+grid.jqGrid({
+   	//url:"local",
+   	data: mydata,
+	datatype: "local",
+	mtype: "POST",
+	sortable: true,
+	height: 400,
+	width: 960,
+	shrinkToFit: false,
+	forceFit: false,
+	autowidth: false,
+	colNames: ['Coluna 1','Coluna 2','Coluna 3','Coluna 4','Coluna 5','Coluna 6'],
+	colModel: [
+	           {name:'coluna1', index:'coluna1', width:80, align:'center', sorttype:'int', hidden:false, key:true},
+	           {name:'coluna2', index:'coluna2', width:80, align:'left'},
+	           {name:'coluna3', index:'coluna3', width:100, align:'right'},
+	           {name:'coluna4', index:'coluna4', width:60, sortable:false},
+	           {name:'coluna5', index:'coluna5', width:80},
+	           {name:'coluna6', index:'coluna6', width:80, align:'center'}
+	   		  ],
+	sortname: "coluna1",
+	sortorder: "asc",
+	loadui: "block",
+	pager: '#gridPager',
+	viewrecords: true,
+	multiselect: false,
+	rowNum: "20",
+	rowList:[20,30,50,100],
+	caption: "Modelo de Grid"
+});
+
+grid.jqGrid('navGrid','#gridPager',{add:false,edit:false,del:false});
+grid.jqGrid('navButtonAdd','#gridPager',{
+    caption: "",
+    title: "Reordenar Colunas",
+    onClickButton : function (){
+        grid.jqGrid('columnChooser');
+    }
+});
+grid.jqGrid('filterToolbar',{stringResult: true,searchOnEnter : false});
+
+//-->
+</script>
+<fieldset>
+	<legend>Modelo de Grid com jqGrid</legend>
+	<table border="0">
+		<tr>
+			<td>
+				<table border="0">
+					<tr>
+						<td colspan="2">Campo Consulta</td>
+					</tr>					
+					<tr>
+						<td>Campo</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<table id="tabGrid"></table>
+							<div id="filterBar" ></div>
+							<div id="gridPager"></div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</fieldset>
+<br/>
+<a href="http://www.trirand.com/blog/">Site Oficial - http://www.trirand.com/blog/</a><br/>
+<a href="http://www.trirand.com/jqgridwiki/doku.php">Documentação - http://www.trirand.com/jqgridwiki/doku.php</a><br/>
+<a href="http://trirand.com/blog/jqgrid/jqgrid.html">Exemplos - http://trirand.com/blog/jqgrid/jqgrid.html</a>

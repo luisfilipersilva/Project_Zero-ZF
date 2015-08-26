@@ -1,0 +1,130 @@
+<script>
+//	var formCarregaArquivo =  $('#frmCarregaArquivo').validate({
+//	//Caso necessário validar algum elemento do formulário antes de 
+//	//enviar o arquivo
+//				true;
+//	});
+	
+	$("#btnCadastrarArquivo").click(function()
+		      {
+//		            if( formCarregaArquivo.form( ) )
+		                  $("#fileUpload").uploadifyUpload( );
+//		            else
+//		                  alert("Problemas ao fazer upload do(s) arquivo(s).");
+		      });
+
+
+	
+	$("#fileUpload").uploadify({
+		'uploader': '/biblioteca/javascript/jquery/upload/uploadfy/swf/uploadify.swf',
+		'cancelImg': '/biblioteca/javascript/jquery/upload/uploadfy/imagem/cancel.png',
+		'script': '/biblioteca/javascript/jquery/upload/uploadfy/php/uploadify.php',
+		
+		'folder': APPLICATION_PATH_WEB_JS+'/public/images/',
+		'multi': true,
+		'auto': false,
+		'displayData': 'speed',
+		'fileDesc': 'Tipos validos: (*.txt)',
+		'fileExt': '*.txt;',
+		'sizeLimit': 4000000,
+		'queueSizeLimit': 1,
+		'buttonText': 'Anexar Arquivo',
+		'buttonImg': APPLICATION_PATH_WEB_JS+'/public/images/btnAnexar.gif',
+		'hideButton': false,
+		'width': 200,
+		'height': 24,
+		'onSelect': function(event, queueID, fileObj){
+			if(fileObj.size > 307200)
+			{
+				alert('O arquivo '+fileObj.name+' excede o Tamanho limite de 300Kb.');
+				$("#fileUpload").uploadifyRemove(queueID);
+			}
+			else
+			{ 
+				if(fileObj.type != ".txt")
+				{
+					alert('O arquivo '+fileObj.name+' não esta no formato correto.');
+					$("#fileUpload").uploadifyRemove(queueID);
+				}
+				else 
+				{
+					$("#hdnNomeArquivo").val(fileObj.name);
+				}
+			}
+		},
+		'onCancel': function(event, queueID, fileObj){
+		},
+		'onAllComplete': function(event, data){
+			trataSolicitacao("#divUpload","index.php/uploadfile/uploadfiledois","#frmCarregaArquivo");
+			$("#divUpload").show();
+//			document.frmCadastrarTelefone.reset(); 
+		},
+		'onError': function(event, queueID, fileObj){
+			alert('Ocorreu um erro inesperado durante o upload do arquivo ('+fileObj.name+'),\nfavor entrar em contato com o administrados do sistema!');
+		}
+	});
+	
+	function trataSolicitacao(alvo,caminho,form){
+		//alert(alvo);
+		//alert(caminho);
+		$.ajax( {
+			
+			type: "POST",		  
+			url:  caminho,
+			data: $(form).serialize(),		  
+			beforeSend: function(){
+			  $.blockUI({ message: '<br><embed src="public/images/carregando.swf" align="Absmiddle" width="70px" height="45px" /> aguarde...<br><br>' });  
+			},
+			complete: function(){
+			  $.unblockUI();
+			},
+			success: function(txt) {
+				$(alvo).html(txt);
+			},
+			error: function(txt) {
+				alert(txt);
+			}
+		})
+	}
+
+</script>
+
+<fieldset>
+	<legend>Fazendo upload de arquivos:</legend>
+	<form id="frmCarregaArquivo" name="frmCarregaArquivo">
+		<table cellpadding="0" cellspacing="0">	
+			<tr>
+				<td colspan="2" height="20"></td>
+			</tr>
+			<tr>
+				<td >
+					Esta opção encaminha Arquivo no formato txt.<br>
+				</td>
+			</tr>
+		</table>
+		<table style="margin-top: 10px;" cellpadding="0" cellspacing="0">
+			<tr><td colspan="3" height="15"></td></tr>
+			<tr>
+				<td></td>	
+				<td>
+					<div style="width:100px !important; margin-bottom: 10px; " id=fileUpload>Problemas ao fazer upload do(s) arquivo(s).</div>
+					<input type="hidden" id="hdnNomeArquivo" name="hdnNomeArquivo">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="20"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td height="20">
+		       		<img src="<?=$this->baseUrl("/images/btnCadastrar.gif");?>" alt="Cadastrar" id="btnCadastrarArquivo">
+				</td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+
+
+
+
+<div id="divUpload" style="display: none"></div>

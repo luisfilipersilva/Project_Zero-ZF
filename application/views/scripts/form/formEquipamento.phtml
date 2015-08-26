@@ -1,0 +1,56 @@
+<script type="text/javascript" src="<?=$this->baseUrl('/public/js/form/equipamento.js');?>"></script>
+<form id="frmForm">
+<fieldset>
+	<legend>Equipamento Afetado</legend>
+	<table border="0">
+		<?=$this->element->hdnPais;?>
+		<?=$this->element->hdnUF;?>
+		<?=$this->element->hdnLocalidade;?>
+		<?=$this->element->hdnEstacao;?>
+		<?=$this->element->hdnEquipamento;?>
+		<?=$this->element->hdnContadorEquip;?>
+		<?=$this->element->hdnExcluiEquipamento;?>
+		<?=$this->element->hdnDSLAMNEncontrado;?>
+		<tr>
+			<td colspan="2"><?=$this->element->rdoTipoEquip;?></td>
+		</tr>					
+		<tr>
+			<td><?=$this->element->slcPais;?></td>
+			<td><?=$this->element->slcUF;?></td>
+		</tr>
+		<tr>
+			<td><?=$this->element->txtLocalidade;?></td>
+			<td><?=$this->element->txtEstacao;?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><?=$this->element->slcEquipamento;?></td>
+		</tr>
+		<tr>
+			<td colspan="2"><?=$this->element->txtEquipamento;?>(<span id="spanRestaEquip"></span> caracteres)</td>
+		</tr>
+		<tr><td colspan="2" height="10"></td></tr>
+		<tr>
+			<td><?=$this->element->addEquipamento;?></td>
+			<td></td>
+		</tr>
+		<tr><td colspan="2" height="10"></td></tr>					
+	</table>
+	<div id="divListaEquipamento">
+		<table class="tabEquipAfetados">
+			<tr>
+				<th>País</th>
+				<th>UF</th>
+				<th>Localidade</th>
+				<th>Estacao</th>
+				<th>Equipamento</th>
+				<th>Qtd Clientes Afetados</th>
+				<th>Excluir</th>
+			</tr>
+			<tr>
+				<td colspan="7">Nenhum equipamento cadastrado.</td>
+			</tr>
+		</table>
+		
+	</div>		
+</fieldset>
+</form>

@@ -1,0 +1,368 @@
+[25-May-2012 12:10:31] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache.php:209
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache\Backend\File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache\Backend\File.php(121): Zend_Cache_Backend_File->setCacheDir(false)
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\Bootstrap.php(13): Zend_Cache::factory('Core', 'File', Array, Array)
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\BootstrapAbstract.php(669): Bootstrap->_initCache()
+#6 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\B in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Cache.php on line 209
+[25-May-2012 12:13:53] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[25-May-2012 12:14:01] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[25-May-2012 12:14:04] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[25-May-2012 12:14:47] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'public' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('public')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'public', 'js')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-May-2012 10:18:48] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-May-2012 10:18:57] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-May-2012 10:18:59] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[06-Jul-2012 09:00:10] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'public' not found' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('public')
+#1 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'public', 'js')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\php\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[20-Sep-2013 11:25:06] PHP Fatal error:  Uncaught exception 'Zend_Controller_Action_Exception' with message 'Action "phpinfo" does not exist and was not trapped in __call()' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action.php:485
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action.php(518): Zend_Controller_Action->__call('phpinfoAction', Array)
+#1 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Dispatcher\Standard.php(295): Zend_Controller_Action->dispatch('phpinfoAction')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 D:\Oi\php\htdocs\aplicacao\ProjetoPa in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action.php on line 485
+[20-Sep-2013 11:28:04] PHP Fatal error:  Uncaught exception 'Zend_View_Exception' with message 'script 'index/phpinfo.phtml' not found in path (D:/Oi/php/htdocs/aplicacao/ProjetoPadraoZF/application/views\scripts/)' in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\View\Abstract.php:988
+Stack trace:
+#0 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\View\Abstract.php(884): Zend_View_Abstract->_script('index/phpinfo.p...')
+#1 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('index/phpinfo.p...')
+#2 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('index/phpinfo.p...', NULL)
+#3 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Action\HelperBroker.php(277): Zend_Controller_Acti in D:\Oi\php\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\View\Abstract.php on line 988
+[15-Jul-2014 10:48:25] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:48:40] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:48:41] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:48:42] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:48:43] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:49:57] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:50:05] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:50:10] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 10:50:13] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 14:54:33] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[15-Jul-2014 15:31:30] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 09:57:29] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 10:13:22] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 10:26:53] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 10:35:17] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 14:40:53] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 14:51:50] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 15:20:02] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 15:26:18] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[17-Jul-2014 15:29:28] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[23-Jul-2014 11:55:39] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[23-Jul-2014 14:15:50] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-Jul-2014 14:34:58] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-Jul-2014 14:35:52] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[28-Jul-2014 14:37:22] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[11-Aug-2014 16:24:57] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[29-Aug-2014 14:34:49] PHP Catchable fatal error:  Argument 1 passed to Zend_Form_Element_Multi::addMultiOptions() must be an array, boolean given, called in D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\forms\FormExemplo.php on line 54 and defined in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Form\Element\Multi.php on line 121
+[01-Sep-2014 10:55:46] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 D:\Oi\PHP\htdocs\aplicacao\ProjetoPadraoZF\public\index. in D:\Oi\PHP\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[01-Dec-2014 14:37:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 F:\XAMPP\xampp\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 F:\XAMPP\xampp\htdocs in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[09-Dec-2014 16:40:41 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 F:\XAMPP\xampp\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 F:\XAMPP\xampp\htdocs in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312
+[09-Dec-2014 16:41:31 America/Sao_Paulo] PHP Catchable fatal error:  Argument 1 passed to Zend_Form_Element_Multi::addMultiOptions() must be of the type array, boolean given, called in F:\XAMPP\xampp\htdocs\aplicacao\ProjetoPadraoZF\application\forms\FormExemplo.php on line 54 and defined in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Form\Element\Multi.php on line 121
+[27-Feb-2015 17:11:32 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'Zend_Acl_Exception' with message 'Resource 'local' not found' in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php:365
+Stack trace:
+#0 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Acl.php(846): Zend_Acl->get('local')
+#1 F:\XAMPP\xampp\htdocs\aplicacao\ProjetoPadraoZF\application\plugins\PluginAcl.php(34): Zend_Acl->isAllowed('4', 'local', 'index')
+#2 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php(309): PluginAcl->preDispatch(Object(Zend_Controller_Request_Http))
+#3 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Front.php(941): Zend_Controller_Plugin_Broker->preDispatch(Object(Zend_Controller_Request_Http))
+#4 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 F:\XAMPP\xampp\htdocs in F:\XAMPP\xampp\htdocs\biblioteca\php\zend\zend-1.11.11\Zend\Controller\Plugin\Broker.php on line 312

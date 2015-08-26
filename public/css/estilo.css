@@ -1,0 +1,40 @@
+body{
+        margin:0;
+        padding:0;
+        background-repeat:repeat-x;
+        font-family:Verdana;
+}
+#divTopo{
+        margin: 0 auto;
+        width:1010px;
+        height:107px;
+        background-image:url('../../public/images/');
+        background-repeat:no-repeat;
+        border:0px solid #cccccc;
+}
+#divMenuTopo{
+        position:absolute;
+        width:825px;
+        height:35px;
+        margin: 84px 95px;
+        z-index: 200;
+}
+#divMoldura{
+        height:480px;
+        width:1008px;
+        margin:0 auto;
+        border-left:1px solid #cccccc;
+        border-right:1px solid #cccccc;
+}
+
+fieldset{
+	border:1px solid #E2E0E0;
+	margin:10px 17px 0px 17px;
+	width: 940px;
+	padding:10px 10px 10px 10px;
+}
+legend{
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: bold;
+}

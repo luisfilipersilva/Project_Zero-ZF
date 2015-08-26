@@ -1,0 +1,73 @@
+<script>
+/*
+ * Abre e fecha div das views
+ */
+function abreFecha(alvo){
+	
+	if($(alvo).parent('fieldset').find('legend a#abreFecha img').attr('id') == 'fechar')
+		$(alvo).parent('fieldset').find('legend a#abreFecha img').attr('src', APPLICATION_PATH_WEB_JS+'/public/images/icoAbrir.gif').attr('id', 'abrir');
+	else if($(alvo).parent('fieldset').find('legend a#abreFecha img').attr('id') == 'abrir')
+		$(alvo).parent('fieldset').find('legend a#abreFecha img').attr('src', APPLICATION_PATH_WEB_JS+'/public/images/icoFechar.gif').attr('id', 'fechar');
+
+	$(alvo).slideToggle('slow');
+}
+
+/* João, consegui melhorar o código, segue:
+function abreFecha( alvo ){
+	if ( $(alvo).is(':visible') )
+			$(alvo).slideUp('slow').parent().find('legend img').attr('src', '/biblioteca/layout/imagens/icoAbrir.gif');
+	else
+		$(alvo).slideDown('slow').parent().find('legend img').attr('src', '/biblioteca/layout/imagens/icoFechar.gif');
+}
+
+<fieldset>
+	<legend>
+		<img onclick="javascript:abreFecha('div#filtros');" src="/biblioteca/layout/imagens/icoFechar.gif"/>
+		&nbsp;Filtros para consulta
+	</legend>
+	<div id="filtros">
+		CONTEUDO QUE SERÁ OCULTADO/EXIBIDO.
+	</div>
+</fieldset>
+				Att.
+				   Lennon.
+ */
+</script>
+
+<br>
+<fieldset>
+	<legend><a id="abreFecha" onclick="javascript:abreFecha('div#XXX-1')"><img id="fechar" src="<?=$this->baseUrl("/images/icoFechar.gif");?>"></img></a> &nbsp;Primeiro Slide</legend>
+	<div  id="XXX-1">
+		<table>
+			<tr>
+				<td>Valor1:&nbsp;<span class="destaque">XXXX</span></td>	
+				<td>Valor2:&nbsp;<span class="destaque">XXXX</span></td>
+			</tr>
+		</table>
+	</div>
+</fieldset>
+<fieldset>
+	<legend><a id="abreFecha" onclick="javascript:abreFecha('div#XXX-2')"><img id="fechar" src="<?=$this->baseUrl("/images/icoFechar.gif");?>"></img></a>  &nbsp;Segundo Slide</legend>
+	<div id="XXX-2">	
+		<div id="tabela1">
+				<?=$this->render('slideshow/slideshowdois.phtml');?>
+		</div>
+	</div>
+</fieldset>
+<fieldset>
+	<legend ><a id="abreFecha" onclick="javascript:abreFecha('div#XXX-3');"><img id="fechar" src="<?=$this->baseUrl("/images/icoFechar.gif");?>"></img></a>  &nbsp;Terceiro Slide </legend>
+	<div id="XXX-3">
+		<div id="tabela1">
+			<?=$this->render('slideshow/slideshowdois.phtml');?>
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend ><a id="abreFecha"  onclick="javascript:abreFecha('div#XXX-4');" ><img id="abrir" src="<?=$this->baseUrl("/images/icoAbrir.gif");?>"> &nbsp;Quarto Slide </img></a>   </legend>
+	<div id="XXX-4" style="display:none;">
+		<div id="tabela1">
+				<?=$this->render('slideshow/slideshowdois.phtml');?>
+		</div>
+	</div>
+</fieldset>

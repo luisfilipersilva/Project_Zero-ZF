@@ -1,0 +1,99 @@
+<?=$this->doctype();?>
+<html>
+<head>
+<?  
+	echo $this->headMeta();
+	echo $this->headTitle();
+    echo $this->headLink();
+?>
+</head>
+<body>
+
+<!-- MENU COM AS FUNCIONALIDADES DO SISTEMA -->
+
+<div id="divTopo">
+	<div id="divMenuTopo">
+		<ul class="memu">
+			<li class="memu-root">
+				<a href="#">NoLayout</a>
+				<ul>
+					<li><a href="javascript:void(0);" id="btnCarregarAjax">carregarAjax()</a></li>
+					<li><a href="<?=$this->baseUrl();?>">Index</a></li>
+				</ul>		
+			</li>
+			<li class="memu-root">
+				<a href="#">Item 2</a>
+				<ul>
+					<li><a href="javascript:void(0);" id="btnSlideShow">Slide Show</a></li>
+					<li><a href="javascript:void(0);" id="btnUpload">Upload Files</a></li>
+					<li><a href="javascript:void(0);" id="btnForm">Form / Autocomplete</a></li>
+				</ul>
+			</li>
+			<li class="memu-root">
+				<a href="#">Item 3</a>
+				<ul>
+					<li><a href="javascript:void(0);" id="btnGrid">Grid</a></li>
+				</ul>
+			</li>
+			<li class="memu-root">
+				<a href="#">Ex.: Sub Menu</a>
+				<ul>
+					<li><a href="#">Status Bar</a></li>
+					<li class="has-children">
+						<a href="#">New</a>
+						<ul>
+							<li><a href="#"><div class="memu-icon sprite-page_white"></div>Text Document</a></li>
+							<li><a href="#"><div class="memu-icon sprite-script_code"></div>HTML Document</a></li>
+							<li><a href="#"><div class="memu-icon sprite-script_palette"></div>CSS Document</a></li>
+							<li><a href="#"><div class="memu-icon sprite-script"></div>JS Document</a></li>
+							<li><a href="#"><div class="memu-icon sprite-page_white_c"></div>C Document</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="memu-root">
+				<a href="javascript:void(0);" id="btnPHP_info">PHP INFO</a>
+			</li>
+		</ul>			
+	</div>
+</div>
+
+<!-- DIV AONDE AS TELAS SERÃƒO CARREGADAS POR AJAX -->
+<div id="divMoldura">
+
+	<p>AcentuaÃ§Ã£o OK!</p>
+	<p>Adicionar a linha em vermelho ao httpd.conf:
+	
+	<b><p>&lt;Directory "D:/Oi/PHP/htdocs"&gt;</p></b>
+	<p>
+	<p><font color="red"> &nbsp;&nbsp;&nbsp;&nbsp;SetEnv APPLICATION_ENV
+	"development" </font></p>
+	&nbsp;&nbsp;&nbsp;&nbsp;Options Indexes FollowSymLinks
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;AllowOverride All</p>
+	&nbsp;&nbsp;&nbsp;&nbsp;Order allow,deny
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Allow from all</p>
+	</p>
+	<b><p>&lt;/Directory&gt;</p></b>
+	</p>
+	
+	
+	<p><b>echo OS =</b> <?=OS?> <i>(servidor)</i></p>
+	<p><b>echo BAR =</b> <?=BAR?></p>
+	<p><b>echo PATH_SEPARATOR =</b> <?=PATH_SEPARATOR?></p>
+	<p><b>echo APPLICATION_ENV =</b> <?=APPLICATION_ENV?></p>
+	<p><b>echo APPLICATION_PATH =</b> <?=APPLICATION_PATH?></p>
+	<p><b>echo APPLICATION_NAME =</b> <?=APPLICATION_NAME?></p>
+	
+	<p><b>&lt;script&gt;</b><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;if( APPLICATION_PATH_WEB_JS == '/aplicacao/<?=APPLICATION_NAME?>' ) <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('div#alvo').html( APPLICATION_PATH_WEB_JS );
+	<br><b>&lt;/script&gt;</b></p>
+	<p><b>&lt;div id='alvo'&gt;</b> /aplicacao/<?=APPLICATION_NAME?> <b>&lt;/div&gt;</b></p>
+
+</div>
+
+</body>
+</html>
+<!-- Todos os arquivos JS serÃ£o carregados depois do HTML ser apresentado,
+	 isso faz com que a pÃ¡gina apareÃ§a mais rapidamente no browser do usuÃ¡rio. -->
+<?=$this->inlineScript();?>
